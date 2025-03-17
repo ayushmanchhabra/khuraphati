@@ -1,11 +1,12 @@
 #!/bin/bash
 
-if [[ "$1" == '-h' || "$1" == '--help' ]]; then
+if [[ "$1" == 'h' || "$1" == 'help' ]]; then
     echo -e "aos.sh <command>\n"
     echo -e "Usage:\n"
-    echo "./aos.sh extract com.package.name /path/to/outDir Extract APK(s) from Android device using Android Debug Bridge (adb)"
+    echo "./aos.sh (h)elp ..Get information on how to use this script"
+    echo "./aos.sh (e)xtract com.package.name /path/to/outDir ..Extract APK(s) from Android device using Android Debug Bridge (adb)"
     exit 0
-elif [[ "$1" == "-e" || "$1" == "--extract" ]]; then
+elif [[ "$1" == "e" || "$1" == "extract" ]]; then
     extract_apk "$2" "$3"
 else
     echo "Unknown command. Please consult the -h or --help command for guidance."

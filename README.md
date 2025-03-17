@@ -12,12 +12,13 @@ A collection of miscellaneous scripts.
 ## aos.sh
 
 ```sh
-└─$ ./aos.sh -h
+└─$ ./aos.sh h
 aos.sh <command>
 
 Usage:
 
-./aos.sh extract com.package.name /path/to/outDir Extract APK(s) from Android device
+./aos.sh (h)elp ..Get information on how to use this script
+./aos.sh (e)xtract com.package.name /path/to/outDir ..Extract APK(s) from Android device using Android Debug Bridge (adb)
 ```
 
 ## License

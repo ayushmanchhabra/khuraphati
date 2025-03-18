@@ -26,7 +26,7 @@ aos.sh <command>
 Usage:
 
 ./aos.sh (h)elp ..Get information on how to use this script
-./aos.sh (e)xtract com.package.name /path/to/out/dir /path/toadb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
+./aos.sh (e)xtract com.package.name /path/to/out/dir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
 ```
 
 ## License

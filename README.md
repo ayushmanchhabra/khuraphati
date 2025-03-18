@@ -9,16 +9,24 @@ A collection of miscellaneous scripts.
 1. Make script executable `chmod +x ./aos.sh`
 1. Follow below usage instructions
 
+## Platform specific instructions:
+
+If using script in Linux but referencing adb binary from Windows file path:
+
+```sh
+./aos.sh extract com.package.name ./out /mnt/c/ProgramData/chocolatey/bin/adb.exe
+```
+
 ## aos.sh
 
 ```sh
-└─$ ./aos.sh h
+└─$ ./aos.sh help
 aos.sh <command>
 
 Usage:
 
 ./aos.sh (h)elp ..Get information on how to use this script
-./aos.sh (e)xtract com.package.name /path/to/outDir ..Extract APK(s) from Android device using Android Debug Bridge (adb)
+./aos.sh (e)xtract com.package.name /path/to/out/dir /path/toadb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
 ```
 
 ## License

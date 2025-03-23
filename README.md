@@ -6,12 +6,12 @@ A collection of miscellaneous scripts.
 
 1. Clone this repo `git clone https://github.com/ayushmanchhabra/khuraphati.git`
 1. Jump into repo `cd ./khuraphati`
-1. Make script executable `chmod +x ./aos.sh`
+1. Make script executable `chmod +x *.sh`
 1. Follow below usage instructions
 
 ## Platform specific instructions:
 
-If using script in Linux but referencing adb binary from Windows file path:
+If using script in Linux WSL but referencing adb binary from Windows file path. For example:
 
 ```sh
 ./aos.sh extract com.package.name ./out /mnt/c/ProgramData/chocolatey/bin/adb.exe
@@ -25,8 +25,8 @@ aos.sh <command>
 
 Usage:
 
-./aos.sh (h)elp ..Get information on how to use this script
-./aos.sh (e)xtract com.package.name /path/to/out/dir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
+./aos.sh help ..Get information on how to use this script
+./aos.sh extract com.package.name /path/to/out/dir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
 ```
 
 ## web.sh
@@ -38,7 +38,7 @@ web.sh <command>
 Usage:
 
 ./web.sh help ..Get information on how to use this script
-./web.sh fuzz http(s)://host.tld /path/to/wordlist/text/file ..Perform path traversal on target host
+./web.sh fuzz ..Perform different types of fuzzing on target host
 ```
 
 ## License

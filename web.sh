@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Perform path traversal on target host.
+# Perform directory traversal on target host.
 function fuzz_paths () {
     # Host name
     HOST_NAME=$1
@@ -21,7 +21,7 @@ if [[ "$1" == 'help' ]]; then
     echo -e "web.sh <command>\n"
     echo -e "Usage:\n"
     echo "./web.sh help ..Get information on how to use this script"
-    echo "./web.sh fuzz http(s)://host.tld /path/to/wordlist/text/file ..Perform path traversal on target host"
+    echo "./web.sh fuzz ..Perform different types of fuzzing on target host"
     exit 0
 elif [[ "$1" == "fuzz" ]]; then
     echo -e "web.sh <command>\n"

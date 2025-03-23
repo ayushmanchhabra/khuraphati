@@ -29,6 +29,18 @@ Usage:
 ./aos.sh (e)xtract com.package.name /path/to/out/dir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
 ```
 
+## web.sh
+
+```sh
+└─$ ./web.sh help
+web.sh <command>
+
+Usage:
+
+./web.sh help ..Get information on how to use this script
+./web.sh fuzz http(s)://host.tld /path/to/wordlist/text/file ..Perform path traversal on target host
+```
+
 ## License
 
 MIT.

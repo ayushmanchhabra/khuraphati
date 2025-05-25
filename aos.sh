@@ -18,14 +18,18 @@ function extract_apk () {
     done
 }
 
-if [[ "$1" == 'h' || "$1" == 'help' ]]; then
+if [[ "$1" == 'help' ]]; then
     echo -e "aos.sh <command>\n"
     echo -e "Usage:\n"
     echo "./aos.sh help ..Get information on how to use this script"
-    echo "./aos.sh extract com.package.name /path/to/outDir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)"
+    echo "./aos.sh extract ..Extract files from Android device using Android Debug Bridge (adb)"
     exit 0
 elif [[ "$1" == "extract" ]]; then
+    echo -e "aos.sh <command>\n"
+    echo -e "Usage:\n"
+    echo "./aos.sh extract=apk com.package.name /path/to/outDir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)"
+elif [[ "$1" == "extract=apk" ]]; then
     extract_apk "$2" "$3" "$4"
 else
-    echo "Unknown command. Please consult the h or help command for guidance."
+    echo "Unknown command. Please consult the 'help' command for guidance."
 fi

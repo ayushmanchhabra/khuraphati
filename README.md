@@ -26,7 +26,7 @@ aos.sh <command>
 Usage:
 
 ./aos.sh help ..Get information on how to use this script
-./aos.sh extract com.package.name /path/to/out/dir /path/to/adb/exe ..Extract APK(s) from Android device using Android Debug Bridge (adb)
+./aos.sh extract ..Extract files from Android device using Android Debug Bridge (adb)
 ```
 
 ## web.sh

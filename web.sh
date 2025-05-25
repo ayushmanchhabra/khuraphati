@@ -30,5 +30,5 @@ elif [[ "$1" == "fuzz" ]]; then
 elif [[ "$1" == "fuzz=directory" ]]; then
     fuzz_paths "$2" "$3" "$4"
 else
-    echo "Unknown command. Please consult the h or help command for guidance."
+    echo "Unknown command. Please consult the 'help' command for guidance."
 fi

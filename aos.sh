@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo -e "Legal disclaimer: Usage of khuraphati scripts on hosts without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.\n"
+
+
 # Extract APKs from Android device using Android Debug Bridge (adb).
 function extract_apk () {
     # Package name of target APK(s)

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -e "Legal disclaimer: Usage of khuraphati scripts on hosts without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.\n"
+
 # Perform directory traversal on target host.
 function fuzz_paths () {
     # Host name
